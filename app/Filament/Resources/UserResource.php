@@ -39,6 +39,12 @@ class UserResource extends Resource
                         Forms\Components\TextInput::make('name')
                             ->required()
                     ]),
+                Forms\Components\Fieldset::make('Details')
+                    ->relationship('details')
+                    ->schema([
+                        Forms\Components\TextInput::make('hourly_rate'),
+                        Forms\Components\TextInput::make('status'),
+                    ]),
             ]);
     }
 
