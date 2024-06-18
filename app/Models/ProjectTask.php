@@ -29,4 +29,9 @@ class ProjectTask extends Model
 
         return $this->belongsTo(User::class);
     }
+
+    public function times()
+    {
+        return $this->hasMany(ProjectTaskTime::class);
+    }
 }

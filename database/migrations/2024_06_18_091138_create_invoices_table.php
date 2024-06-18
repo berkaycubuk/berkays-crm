@@ -20,14 +20,14 @@ return new class extends Migration
             $table->string('currency', 10);
             $table->string('status');
             $table->string('first_name');
-            $table->string('last_name')->nullable;
+            $table->string('last_name')->nullable();
             $table->string('company')->nullable();
-            $table->text('address')->nullable;
-            $table->string('city')->nullable;
-            $table->string('country')->nullable;
-            $table->string('postal_code', 50)->nullable;
-            $table->string('tax_id')->nullable;
-            $table->string('document_path')->nullable;
+            $table->text('address')->nullable();
+            $table->string('city')->nullable();
+            $table->string('country')->nullable();
+            $table->string('postal_code', 50)->nullable();
+            $table->string('tax_id')->nullable();
+            $table->string('document_path')->nullable();
             $table->timestamps();
         });
     }

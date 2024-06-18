@@ -22,4 +22,9 @@ class Contact extends Model
         'postal_code',
         'tax_id',
     ];
+
+    public function getFullNameAttribute()
+    {
+        return $this->first_name . ' ' . $this->last_name;
+    }
 }

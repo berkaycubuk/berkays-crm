@@ -17,4 +17,9 @@ class Project extends Model
         'started_at',
         'finished_at',
     ];
+
+    public function tasks()
+    {
+        return $this->hasMany(ProjectTask::class);
+    }
 }
